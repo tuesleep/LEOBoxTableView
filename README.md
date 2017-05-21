@@ -9,7 +9,7 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-
+![demo](https://github.com/leonardo-hammer/LEOBoxTableView/blob/master/leoboxtableview-demo.gif?raw=true")
 
 ## Requirements
 
