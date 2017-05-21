@@ -1,0 +1,16 @@
+PODS:
+  - LEOBoxTableView (0.1.0)
+
+DEPENDENCIES:
+  - LEOBoxTableView (from `../`)
+
+EXTERNAL SOURCES:
+  LEOBoxTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LEOBoxTableView: 6104d42eee0a3cfb1880b2260fcd56546e7c6f83
+
+PODFILE CHECKSUM: 6be8fc8ba6b312e9d2981e4dd9476b77ced14221
+
+COCOAPODS: 1.2.1

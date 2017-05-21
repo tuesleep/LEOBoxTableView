@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LEOBoxTableView_Example' do
+  pod 'LEOBoxTableView', :path => '../'
+
+  target 'LEOBoxTableView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
