@@ -9,7 +9,12 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+
+
 ## Requirements
+
+- Extends LEOBoxTableViewCell to customize cell.
+- Add LEOBoxTableView to view.
 
 ## Installation
 

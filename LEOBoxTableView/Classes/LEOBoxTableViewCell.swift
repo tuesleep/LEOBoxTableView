@@ -8,8 +8,8 @@
 
 import UIKit
 
-class LEOBoxTableViewCell: UITableViewCell {
-	override var frame: CGRect {
+open class LEOBoxTableViewCell: UITableViewCell {
+	override open var frame: CGRect {
 		get {
 			return super.frame
 		}
@@ -20,17 +20,23 @@ class LEOBoxTableViewCell: UITableViewCell {
 			}
 			
 			let inset = tableView.boxInset
-			var x = inset.left
-			
-			if tableView.isEditing == true || tableView.currentEditingCell != self {
-				x = newFrame.origin.x + inset.left
-			}
+			let width = tableView.frame.width
+			let x = newFrame.origin.x + inset.left
 			
 			let origin = CGPoint(x: x, y: newFrame.origin.y)
-			let size = CGSize(width: tableView.frame.width - (inset.left + inset.right), height: newFrame.height - (inset.top + inset.bottom))
+			let size = CGSize(width: width - (inset.left + inset.right), height: newFrame.height - (inset.top + inset.bottom))
 
 			super.frame = CGRect(origin: origin, size: size)
 		}
+	}
+	
+	override open func awakeFromNib() {
+		super.awakeFromNib()
+		
+		layer.shadowColor = UIColor.lightGray.cgColor
+		layer.shadowOpacity = 1.0;
+		layer.shadowRadius = 2.0;
+		layer.shadowOffset = CGSize(width: 0, height: 0);
 	}
 	
 	func superTableView() -> UITableView? {
